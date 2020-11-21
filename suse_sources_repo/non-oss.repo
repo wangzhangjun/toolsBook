@@ -1,0 +1,6 @@
+[non-oss]
+name=non-oss
+enabled=1
+autorefresh=1
+baseurl=https://ftp5.gwdg.de/pub/opensuse/discontinued/distribution/11.3/repo/non-oss/
+type=yast2

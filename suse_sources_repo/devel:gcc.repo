@@ -1,0 +1,7 @@
+[devel_gcc]
+name=GNU Compiler Collection container (SLE-11)
+type=rpm-md
+baseurl=http://download.opensuse.org/repositories/devel:/gcc/SLE-11/
+gpgcheck=1
+gpgkey=http://download.opensuse.org/repositories/devel:/gcc/SLE-11/repodata/repomd.xml.key
+enabled=1

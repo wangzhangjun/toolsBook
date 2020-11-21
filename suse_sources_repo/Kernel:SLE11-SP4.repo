@@ -1,0 +1,7 @@
+[Kernel_SLE11-SP4]
+name=Kernel builds for branch SLE11-SP4 (standard)
+type=rpm-md
+baseurl=http://download.opensuse.org/repositories/Kernel:/SLE11-SP4/standard/
+gpgcheck=1
+gpgkey=http://download.opensuse.org/repositories/Kernel:/SLE11-SP4/standard/repodata/repomd.xml.key
+enabled=1
