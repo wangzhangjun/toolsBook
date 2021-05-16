@@ -12,7 +12,7 @@ doc/*.txt # 会忽略 doc/notes.txt 但不包括 doc/server/arch.txt
 *ignore*/ # 忽略名称中间包含ignore的文件夹
 ```
 
-### Git修改gitignore后生效
+### git修改gitignore后生效(可能不需要执行)
 ```
 git rm -r --cached .    #清除缓存
 git add .               #重新trace file
