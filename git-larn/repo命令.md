@@ -21,7 +21,7 @@ repo只是google用Python脚本写的调用git的一个脚本，主要是用来�
     当我想通过这个命令遍历所有的仓库并在每个仓库执行"git checkout . "用以将每个仓库的改动都清除的时候，我这么输入命令：
     repo forall -c git checkout .
     看来repo不能遍历执行checkout这个命令。今天我终于想到了另外一个命令"git reset --hard HEAD"
-    repo forall -c git git reset --hard HEAD
+    repo forall -c git reset --hard HEAD
     再说一个新发现：以前用repo forall 执行一些命令的时候，可能再遍历到某个仓库的时候出了问题，但是我却苦于不知道这个仓库到底是哪个！一直也没有解决。今天终于找到了,关键时候还是要看命令自己带的帮助手册呀。repo help forall  用这个命令查看下针对forall的帮助吧。说的很清楚，repo执行的时候加上-p参数就可以在遍历到每个仓库的时候先打印出当前的pwd，然后再继续执行-c所指定的命令。举例如下：repo forall -p -c git branch
     ```
 
