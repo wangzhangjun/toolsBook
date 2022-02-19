@@ -1,0 +1,14 @@
+### 1. 一个最小的cmake文件
+```
+cmake_minimum_required(VERSION 2.6)
+project (hello_cmake)
+add_executable(${PROJECT_NAME} main.cpp)
+```
+
+### 2. 说明
+add_executable(hello_cmake main.cpp)，指定生成的可执行文件名，后面是要生成这个可执行文件的源文件。
+
+**注意：the project() function, will create a variable ${PROJECT_NAME} with the value hello_cmake。它可以被传递给add_executable方法，生成hello_cmake的可执行文件。**
+
+### 3. build目录
+一般情况下都是在本目录下创建一个Build目录，然后在cd build， cmake .., make。要不然就和你的文件混在一起比较麻烦。
